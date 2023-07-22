@@ -16,21 +16,21 @@ Feature variables and Target variable were then separated and the data was split
 
 ### Model Compiling and Training
 
-Model was compiled with an input and a hidden layer and nuber of neurons selected for each layer were 108 as the number of features with `Rectified Linear Unit (RELU)` as activation function.
+Model was compiled with an input and a hidden layer and number of neurons selected for each layer were 108 as the number of features with `Rectified Linear Unit (RELU)` as activation function.
 
-Output layer has a single neuron with `Sigmoid` activation function toi produce binary output.
+Output layer has a single neuron with `Sigmoid` activation function to produce binary output.
 
 Model was compiled using `ADAM` optimizer, loss function as `binary_crossentropy` and `accuracy` metric for model performance evaluation.
 
 Model was initialized with 100 epochs and a call back was configured to save model weights after every 5 epochs.
 
-### Resulta
+### Results
 
 Over-all  model accuracy was 72.4% and a Loss of 0.56. A target model performance of 75% was not met
 
 ### Model Optimization
 
-In order to improve upon the model performance, Kersa model tuner library `keras-tuner` was used to tune the hyper parameters. Hyper parameter search space was configured which included hyperparamaters - 
+In order to improve upon the model performance, Keras model tuner library `keras-tuner` was used to tune the model hyperparameters. Hyperparameter search space was configured which included - 
     * Number of  layers
     * Number of neurons in each layer
     * Activation function
@@ -42,6 +42,6 @@ Accuracy slightly improved to 73.07% but it still was below the desired 75% leve
 
 ### Recommendation
 
-We recould re-look at training data to include more relevant features as to the business experience of the applicant, stage of the venture (early stage, growth etc). We should also evaluate the performance of other binar classifiers such as Logistic Regression, SVM, Ensemble trees etc and compare their performance to choose the model wih best performance
+We could re-look at training data to include more relevant features as to the business experience of the applicant, stage of the venture (early stage, growth etc). We should also evaluate the performance of other binary classifiers such as Logistic Regression, SVM, Ensemble trees etc and compare their performance to choose the model with best performance
 
 
